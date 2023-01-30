@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Righteous, sans-serif;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+img {
+    width: 50px;
+}
+
+.sidebar {
+    grid-row: 1 / 3;
+    background-color: lightcoral;
+    color: white;
+    padding: 1rem;
+}
+
+.sidebar .logo {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.sidebar .logo i {
+    font-size: 2rem;
+    justify-self: center;
+}
+
+.sidebar .sidebar-buttons {
+    display: grid;
+    gap: 3rem;
+}
+
+.sidebar .sidebar-buttons .button {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.sidebar .sidebar-buttons .button:hover {
+    color: bisque;
+}
+
+.sidebar .sidebar-buttons .button:active {
+    font-size: 1.3rem;
+}
+
+.sidebar .sidebar-buttons .button i {
+    justify-self: center;
+}
