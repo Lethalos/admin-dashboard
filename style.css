@@ -12,7 +12,7 @@ body {
 }
 
 img {
-    width: 50px;
+    width: 40px;
 }
 
 .sidebar {
@@ -57,4 +57,54 @@ img {
 
 .sidebar .sidebar-buttons .button i {
     justify-self: center;
+}
+
+.navbar {
+    background-color: lightskyblue;
+    color: white;
+    padding: 0.5rem 3rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.navbar .search {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+}
+
+.navbar .search i:hover {
+    cursor: pointer;
+}
+
+.navbar #search-bar {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 0.25rem 1rem;
+}
+
+.navbar #search-bar:focus {
+    outline: 2px solid lightgreen;
+}
+
+.navbar .profile {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .profile .notifications {
+    font-size: 1.25rem;
+}
+
+.navbar .profile .notifications i:hover {
+    cursor: pointer;
+}
+
+.navbar .profile .profile-img {
+    border-radius: 100%;
 }
