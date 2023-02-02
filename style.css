@@ -66,7 +66,7 @@ img {
     grid-template-columns: 2fr 1fr;
     align-items: center;
     column-gap: 2rem;
-    box-shadow: 0 4px 2px -2px black;
+    /* box-shadow: 0 4px 2px -2px black; */
 }
 
 .navbar .search {
@@ -76,6 +76,7 @@ img {
 
 .navbar .search i:hover {
     cursor: pointer;
+    color: gray;
 }
 
 .navbar #search-bar {
@@ -104,6 +105,7 @@ img {
 
 .navbar .profile .notifications i:hover {
     cursor: pointer;
+    color: gray;
 }
 
 .navbar .profile .profile-img {
@@ -150,12 +152,95 @@ img {
 
 .content {
     background-color: #e6e6e6;
-    padding: 1rem 3rem;
+    padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 1fr 200px;
+    column-gap: 2rem;
+}
+
+.content .content-title {
+    margin-bottom: 1rem;
 }
 
 .content .projects {
     grid-row: 1 / 3;
 }
- 
+
+.content .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.content .cards .card {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    border-left: 10px solid lightcoral;
+    display: grid;
+}
+
+.content .cards .card .interaction-buttons {
+    justify-self: end;
+    align-self: flex-end;
+}
+
+.content .cards .card .interaction-buttons i:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.content .announcements {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    display: grid;
+    gap: 1rem;
+}
+
+.content .announcements hr {
+    border-color: lightcoral;
+}
+
+.content .announcements h4 {
+    font-size: 0.8rem;
+}
+
+.content .announcements p {
+    font-size: 0.7rem;
+}
+
+.content .users {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    display: grid;
+    row-gap: 1rem;
+}
+
+.content .trending {
+    align-self: flex-end;
+}
+
+.content .users .user {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.content .users .user img {
+    border-radius: 100%;
+    grid-row: 1 / 3;
+}
+
+.content .users .user .tag {
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.content .users .user .project-name {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color:gray;
+}
