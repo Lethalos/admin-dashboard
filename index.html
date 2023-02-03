@@ -1,205 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="sidebar">
-        <div class="logo">
-            <i class="fa-solid fa-hippo"></i>
-            <h1 class="title">Dashboard</h1>
+      <div class="logo">
+        <i class="fa-solid fa-hippo"></i>
+        <h1 class="title">Dashboard</h1>
+      </div>
+      <div class="sidebar-buttons">
+        <div class="user-buttons">
+          <div class="button">
+            <i class="fa-solid fa-house"></i>
+            <h3>Home</h3>
+          </div>
+          <div class="button">
+            <i class="fa-regular fa-address-card"></i>
+            <h3>Profile</h3>
+          </div>
+          <div class="button">
+            <i class="fa-solid fa-message"></i>
+            <h3>Messages</h3>
+          </div>
+          <div class="button">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <h3>History</h3>
+          </div>
+          <div class="button">
+            <i class="fa-solid fa-bars-progress"></i>
+            <h3>Tasks</h3>
+          </div>
+          <div class="button">
+            <i class="fa-solid fa-people-group"></i>
+            <h3>Communities</h3>
+          </div>
         </div>
-        <div class="sidebar-buttons">
-            <div class="user-buttons">
-                <div class="button">
-                    <i class="fa-solid fa-house"></i>
-                    <h3>Home</h3>
-                </div>
-                <div class="button">
-                    <i class="fa-regular fa-address-card"></i>
-                    <h3>Profile</h3>
-                </div>
-                <div class="button">
-                    <i class="fa-solid fa-message"></i>
-                    <h3>Messages</h3>
-                </div>
-                <div class="button">
-                    <i class="fa-solid fa-clock-rotate-left"></i>
-                    <h3>History</h3>
-                </div>
-                <div class="button">
-                    <i class="fa-solid fa-bars-progress"></i>
-                    <h3>Tasks</h3>
-                </div>
-                <div class="button">
-                    <i class="fa-solid fa-people-group"></i>
-                    <h3>Communities</h3>
-                </div>
-            </div>
-            <div class="property-buttons">
-                <div class="button">
-                    <i class="fa-solid fa-gear"></i>
-                    <h3>Settings</h3>
-                </div>
-                <div class="button">
-                    <i class="fa-solid fa-life-ring"></i>
-                    <h3>Support</h3>
-                </div>
-                <div class="button">
-                    <i class="fa-solid fa-user-shield"></i>
-                    <h3>Privacy</h3>
-                </div>
-            </div>
+        <div class="property-buttons">
+          <div class="button">
+            <i class="fa-solid fa-gear"></i>
+            <h3>Settings</h3>
+          </div>
+          <div class="button">
+            <i class="fa-solid fa-life-ring"></i>
+            <h3>Support</h3>
+          </div>
+          <div class="button">
+            <i class="fa-solid fa-user-shield"></i>
+            <h3>Privacy</h3>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="navbar">
-        <div class="search">
-            <label for="search-bar">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </label>
-            <input type="text" id="search-bar">
+      <div class="search">
+        <label for="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </label>
+        <input type="text" id="search-bar" />
+      </div>
+      <div class="profile">
+        <div class="notifications">
+          <i class="fa-solid fa-bell"></i>
         </div>
-        <div class="profile">
-            <div class="notifications">
-                <i class="fa-solid fa-bell"></i>
-            </div>
-            <img class="profile-img" src="./images/profile-img1.png" alt="profile-img">
-            <h3 class="name">Kaan Ozdogan</h3>
-        </div>
-        <div class="greetings-header">
-            <img class="profile-img" src="./images/profile-img1.png" alt="profile-img">
-            <h4 class="greetings-text">Hi there,</h4>
-            <h3 class="name">Kaan Ozdogan (@kaan)</h3>
-        </div>
-        <div class="nav-links">
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
-        </div>
+        <img
+          class="profile-img"
+          src="./images/profile-img1.png"
+          alt="profile-img"
+        />
+        <h3 class="name">Kaan Ozdogan</h3>
+      </div>
+      <div class="greetings-header">
+        <img
+          class="profile-img"
+          src="./images/profile-img1.png"
+          alt="profile-img"
+        />
+        <h4 class="greetings-text">Hi there,</h4>
+        <h3 class="name">Kaan Ozdogan (@kaan)</h3>
+      </div>
+      <div class="nav-links">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
     </div>
 
     <div class="content">
-        <div class="projects">
-            <h3 class="content-title">Your Projects</h3>
-            <div class="cards">
-                <div class="card">
-                    <div class="project-text">
-                        <h3>Super Cool Project</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, quas!</p>
-                    </div>
-                    <div class="interaction-buttons">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-eye"></i>
-                        <i class="fa-regular fa-share-from-square"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="project-text">
-                        <h3>Less Cool Project</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni earum iste autem nam minus ut. Corrupti explicabo molestiae dolor tempora illo debitis. Rem tenetur in quis nam alias sit velit?</p>
-                    </div>
-                    <div class="interaction-buttons">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-eye"></i>
-                        <i class="fa-regular fa-share-from-square"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="project-text">
-                        <h3>Impossible App</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A dolore nesciunt nulla? Doloremque, molestiae accusamus!</p>
-                    </div>
-                    <div class="interaction-buttons">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-eye"></i>
-                        <i class="fa-regular fa-share-from-square"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="project-text">
-                        <h3>Easy Peasy App</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus debitis nam consectetur et ipsa! Similique sint nulla iste suscipit in!</p>
-                    </div>
-                    <div class="interaction-buttons">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-eye"></i>
-                        <i class="fa-regular fa-share-from-square"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="project-text">
-                        <h3>Ad Blocker</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, suscipit quam laudantium sint saepe id nihil culpa?</p>
-                    </div>
-                    <div class="interaction-buttons">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-eye"></i>
-                        <i class="fa-regular fa-share-from-square"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="project-text">
-                        <h3>Games</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa libero delectus totam!</p>
-                    </div>
-                    <div class="interaction-buttons">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-eye"></i>
-                        <i class="fa-regular fa-share-from-square"></i>
-                    </div>
-                </div>
+      <div class="projects">
+        <h3 class="content-title">Your Projects</h3>
+        <div class="cards">
+          <div class="card">
+            <div class="project-text">
+              <h3>Super Cool Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+                quas!
+              </p>
             </div>
-        </div>
-        <div class="announcement-section">
-            <h3 class="content-title">Announcements</h3>
-            <div class="announcements">
-                <div class="announcement">
-                    <h4>Site Maintenance</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nam libero repudiandae. Quidem, placeat aliquid!</p>
-                </div>
-                <hr>
-                <div class="announcement">
-                    <h4>Community Share Day</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore laboriosam fuga fugit numquam doloribus quasi consectetur cum. Quia, nihil eos?</p>
-                </div>
-                <hr>
-                <div class="announcement">
-                    <h4>Updated Privacy Policy</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, molestiae.</p>
-                </div>
+            <div class="interaction-buttons">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-eye"></i>
+              <i class="fa-regular fa-share-from-square"></i>
             </div>
-        </div>
-        <div class="trending">
-            <h3 class="content-title">Trending</h3>
-            <div class="users">
-                <div class="user">
-                    <img src="./images/profile-img1.png" alt="profile-img">
-                    <h4 class="tag">@kaan</h4>
-                    <h4 class="project-name">World Peace Builder</h4>
-                </div>
-                <div class="user">
-                    <img src="./images/profile-img2.jpg" alt="profile-img">
-                    <h4 class="tag">@bymizrak</h4>
-                    <h4 class="project-name">Super Cool Project</h4>
-                </div>
-                <div class="user">
-                    <img src="./images/profile-img3.jpg" alt="profile-img">
-                    <h4 class="tag">@dante</h4>
-                    <h4 class="project-name">Less Cool Project</h4>
-                </div>
-                <div class="user">
-                    <img src="./images/profile-img4.jpg" alt="profile-img">
-                    <h4 class="tag">@virgil</h4>
-                    <h4 class="project-name">Easy Peasy App</h4>
-                </div>
+          </div>
+          <div class="card">
+            <div class="project-text">
+              <h3>Less Cool Project</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
+                earum iste autem nam minus ut. Corrupti explicabo molestiae
+                dolor tempora illo debitis. Rem tenetur in quis nam alias sit
+                velit?
+              </p>
             </div>
+            <div class="interaction-buttons">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-eye"></i>
+              <i class="fa-regular fa-share-from-square"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="project-text">
+              <h3>Impossible App</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. A
+                dolore nesciunt nulla? Doloremque, molestiae accusamus!
+              </p>
+            </div>
+            <div class="interaction-buttons">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-eye"></i>
+              <i class="fa-regular fa-share-from-square"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="project-text">
+              <h3>Easy Peasy App</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Doloribus debitis nam consectetur et ipsa! Similique sint nulla
+                iste suscipit in!
+              </p>
+            </div>
+            <div class="interaction-buttons">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-eye"></i>
+              <i class="fa-regular fa-share-from-square"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="project-text">
+              <h3>Ad Blocker</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+                suscipit quam laudantium sint saepe id nihil culpa?
+              </p>
+            </div>
+            <div class="interaction-buttons">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-eye"></i>
+              <i class="fa-regular fa-share-from-square"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="project-text">
+              <h3>Games</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+                libero delectus totam!
+              </p>
+            </div>
+            <div class="interaction-buttons">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-eye"></i>
+              <i class="fa-regular fa-share-from-square"></i>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="announcement-section">
+        <h3 class="content-title">Announcements</h3>
+        <div class="announcements">
+          <div class="announcement">
+            <h4>Site Maintenance</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+              nam libero repudiandae. Quidem, placeat aliquid!
+            </p>
+          </div>
+          <hr />
+          <div class="announcement">
+            <h4>Community Share Day</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Inventore laboriosam fuga fugit numquam doloribus quasi
+              consectetur cum. Quia, nihil eos?
+            </p>
+          </div>
+          <hr />
+          <div class="announcement">
+            <h4>Updated Privacy Policy</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Accusamus, molestiae.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="trending">
+        <h3 class="content-title">Trending</h3>
+        <div class="users">
+          <div class="user">
+            <img src="./images/profile-img1.png" alt="profile-img" />
+            <h4 class="tag">@kaan</h4>
+            <h4 class="project-name">World Peace Builder</h4>
+          </div>
+          <div class="user">
+            <img src="./images/profile-img2.jpg" alt="profile-img" />
+            <h4 class="tag">@bymizrak</h4>
+            <h4 class="project-name">Super Cool Project</h4>
+          </div>
+          <div class="user">
+            <img src="./images/profile-img3.jpg" alt="profile-img" />
+            <h4 class="tag">@dante</h4>
+            <h4 class="project-name">Less Cool Project</h4>
+          </div>
+          <div class="user">
+            <img src="./images/profile-img4.jpg" alt="profile-img" />
+            <h4 class="tag">@virgil</h4>
+            <h4 class="project-name">Easy Peasy App</h4>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
